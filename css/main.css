@@ -1,3 +1,13 @@
-body{
-    background-color: burlywood;
+/**headero*/
+.header {
+    border: 1px dotted blue;
 }
+
+.container {
+    border: 1px dotted red;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**main*/
+/**footer*/
