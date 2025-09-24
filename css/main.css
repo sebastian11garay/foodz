@@ -5,6 +5,28 @@
 
 .container {
     border: 1px dotted red;
+    max-width: 96vw;
+    margin: 0 auto;
+}
+
+@media (min-width: 568px) {
+    .container {
+        max-width: 540px;}
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 992px;
+    }
+}
+
+.header-container{
     display: flex;
     justify-content: space-between;
 }
