@@ -1,4 +1,17 @@
-/**headero*/
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+/**header*/
 .header {
     border: 1px dotted rgb(255, 55, 0);
 }
@@ -19,16 +32,33 @@
     box-sizing: border-box;
 }
 
-.header-container{
+.menu-main{
+    display: none;
+}
+
+ nav.nav-navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+    
 
 @media (min-width: 568px) {
     .container {
         max-width: 540px;
         padding: 0 16px;
     }
+.menu-main{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+ }
+.hamburger-menu{
+    display: none;
+ }
 }
 
 @media (min-width: 768px){
