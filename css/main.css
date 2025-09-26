@@ -1,3 +1,16 @@
+/**variables globales*/
+:root{
+    /**convierte 1re, en base 10**/
+    --over-fontsize:62.5%;
+        /** colores bases*/
+    --Islamic-Green: #04B90B;
+    --Slate-Gray: #777E90;
+}
+
+html{
+    font-size: 62.5%;
+}
+
 html, body{
     height: 100%;
     margin: 0;
