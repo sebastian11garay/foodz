@@ -4,7 +4,12 @@
     --over-fontsize:62.5%;
         /** colores bases*/
     --Islamic-Green: #04B90B;
-    --Slate-Gray: #777E90;
+    --Slate-Gray: #777E90; /** Color de los btn en el Header & h2 Pag.1 */
+    --Cultured: #F4F5F6; /** Color del recuadro "years of service" Pag.1 */
+    --Charleston-Green: #23262F; /** Color de letra h1 Pag.1*/
+    --Chinese-White: #DDF3D8; /** Color del circulo de fondo en la imagen Pag.1 */
+    --Lotion: #FCFCFD; /** Color blanco del fondo de la pagina web Pag.1*/
+    --White: #FFFFFF; /** Color de fondo en las imagenes de comida Pag.2 & la descripción de la Pag.3 */
 }
 
 html{
@@ -19,6 +24,7 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
+    font-size: 0,8rem;
 }
 
 h1 span {
@@ -38,7 +44,7 @@ main{
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 96vw;
-    padding: 0 8px;
+    padding: 0.8rem;
 }
 
 .container-fluid{
@@ -56,7 +62,7 @@ main{
  nav.nav-navbar {
     align-items: center;
     display: flex;
-    height: 44px;
+    height: 4.4rem;
     justify-content: space-between;
 }
 
@@ -67,7 +73,7 @@ main{
 
 .btn {
     padding: .5rem ;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
 }
 
 .btn--light-green {
@@ -79,8 +85,8 @@ main{
 
 @media (min-width: 568px) {
     .container {
-        max-width: 540px;
-        padding: 0 16px;
+        max-width: 54rem;
+        padding: 16rem;
     }
 .menu-main{
     display: flex;
@@ -97,43 +103,43 @@ main{
 
 @media (min-width: 768px){
     .container{
-        max-width: 720px;
-        padding: 0 24px;
+        max-width: 72rem;
+        padding: 24rem;
     }
 }
 
 @media (min-width: 1024px){
     .container{
-        max-width: 992px;
-        padding: 0 32px;
+        max-width: 99.2rem;
+        padding: 0 3.2rem;
     }
 }
 
 @media (min-width: 1200px){
     .container{
-        max-width: 1140px;
-        padding: 0 40px;
+        max-width: 1140rem;
+        padding: 40rem;
     }
 }
 
 @media (min-width: 1400px){
     .container{
         max-width: 1320px;
-        padding: 0 48px;
+        padding: 0 4.8rem;
     }
 }
 
 @media (min-width: 1600px){
     .container{
-        max-width: 1440px;
-        padding: 0 56px;
+        max-width: 144rem;
+        padding: 0 5.6rem;
     }
 }
 
 @media (min-width: 1920px){
     .container{
-        max-width: 1600px;
-        padding: 0 64px;
+        max-width: 160rem;
+        padding: 0 6.4rem;
     }
 }
 
