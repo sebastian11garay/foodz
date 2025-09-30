@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
 /**variables globales*/
 :root{
     /**convierte 1re, en base 10**/
@@ -19,7 +21,7 @@
     --cultured:#f5f6fa;
     --lotion: #fcfcfd;
 
-    --islamic-green:-#04b90b;
+    --islamic-green: #04b90b;
     --aero-blue:#d3f9d5;
     --light-coral:#ea8484;
     --lavender-blush:#fcf1f1;
@@ -50,15 +52,53 @@ body{
     display: flex;
     flex-direction: column;
     font-size: 1.4rem;
+     font-family: "Alice", serif;
+}
+
+
+h1,
+h2{
+    color: var(--Charleston-Green);
+    font-size: 3.2rem;
 }
 
 h1 span {
-    color: #04B90B;
+    color: var(--Islamic-Green)
 }
 
 main{
     flex-grow: 1;
 }
+
+.widget {
+    margin: 4rem 0;
+}
+
+.widget-left {
+    text-align: center;
+}
+/**footer*/
+details {
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.5em;
+}
+
 /**header*/
 .header {
     border: 1px dotted rgb(255, 55, 0);
@@ -96,8 +136,12 @@ main{
     text-decoration: none;
 }
 
+.active{
+    color: var(--Islamic-Green);
+}
+
 .btn {
-    padding: .5rem ;
+    padding: .5rem 1rem;
     border-radius: 0.2rem;
 }
 
@@ -131,7 +175,20 @@ main{
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    .footer-container {
+    display: flex;
+    gap: 4rem;
+    }
 }
+    
+    .widget-left {
+        flex-basis: 40%;
+    }
+    .widget-right {
+        flex: 1 0 auto;
+        /**flex: flex-grow  flex-shrink  flex-basis**/
+    }
+
 
 @media ( width > 1024px){
     .container{
