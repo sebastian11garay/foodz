@@ -11,8 +11,7 @@
     --Charleston-Green: #23262F; /** Color de letra h1 Pag.1*/
     --Chinese-White: #DDF3D8; /** Color del circulo de fondo en la imagen Pag.1 */
     --Lotion: #FCFCFD; /** Color blanco del fondo de la pagina web Pag.1*/
-    --White: #FFFFFF; /** Color de fondo en las imagenes de comida Pag.2 & la descripción de la Pag.3 */
-    
+    --White: #FFFFFF; /** Color de fondo en las imagenes de comida Pag.2 & la descripción de la Pag.3 */   
 
     --chinese-black:#141416;
     --slate-grey: #777e90;
@@ -70,6 +69,13 @@ main{
     flex-grow: 1;
 }
 
+/**footer*/
+.menu-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .widget {
     margin: 4rem 0;
 }
@@ -77,12 +83,13 @@ main{
 .widget-left {
     text-align: center;
 }
-/**footer*/
+
 details {
   border: 1px solid #aaaaaa;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
 }
+
 
 summary {
   font-weight: bold;
@@ -94,9 +101,10 @@ details[open] {
   padding: 0.5em;
 }
 
-details[open] summary {
+details {
   border-bottom: 1px solid #aaaaaa;
   margin-bottom: 0.5em;
+  flex: 1;
 }
 
 /**header*/
